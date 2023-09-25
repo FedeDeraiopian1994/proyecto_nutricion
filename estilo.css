@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logotipo{
+    border-radius: 100%;
+}
+body{
+    width: 100%;
+    min-height: 1500px;
+       
+}
+.foto{
+    height: 2.5em;
+    margin-top: -17px;
+    text-align: center;
+    border-radius: 100%;
+}
+h1{
+    font-size: 2.5em;
+    display: inline;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 50%;
+}
+.offcanvas-title{
+    margin-left: 40%;
+    text-decoration: underline;
+    font-size: 22px;
+}
+.nav-item{
+    text-align: center;
+}
+.nav-link:hover{
+    font-size: 105%;
+}
+.inicio{
+    margin: auto;
+    height: 100vh;
+    background-image: url(imagenes/inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-position-x: 15%;
+    background-position-y: 22%;
+}
+.contenido_principal{
+    max-width: 1100px;
+    margin: auto;
+}
+.primer_segmento{
+    color: green;
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.primer_segmento h2{
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-left: 22px;
+}
+.primer_segmento p{
+    margin: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.elecciones{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 30px;
+    left: 50%;
+    transform:translateX(-50%)
+}
+.opcion{
+    text-align: center;
+    border-top: 2px solid rgb(42, 219, 2);
+    padding: 10px;
+    color: rgb(27, 128, 4);
+    margin: 0 30px;
+}
+.opcion a{
+    color: green;
+    text-decoration: none;
+}
+.conoceme{
+    margin-top: 7px;
+}
+.card-img{
+    opacity: 50%;
+}
+.card-img-overlay{
+    text-align: center;
+    color: white;
+
+}
+.card-img-overlay h2{
+    font-size: 50px;
+    margin-top: 10%;
+}
+.card-img-overlay p{
+    font-size: 25px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.consultorios{
+    margin-top: -5px;
+    text-align: center;
+    overflow: hidden;
+    animation: animaciones 1.5s infinite alternate;
+    
+}
+@keyframes animaciones{
+    0%{
+        background: linear-gradient(30deg, rgb(8, 103, 8), green, rgb(11, 190, 11), rgb(99, 243, 59) ,rgb(163, 240, 142));
+    }
+    100%{
+        background: linear-gradient(30deg, rgb(163, 240, 142), rgb(118, 237, 85), rgb(11, 190, 11), green, rgb(8, 103, 8) );
+    }
+}
+.lugares{
+    color: white;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 10%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+.primera_card{
+    margin-left: 48.5%;
+    margin-top: 22px;
+}
+.segunda_card{
+    margin-left: 25%;
+}
+.tercera_card{
+    margin-left: 0.5%;
+}
+.img-fluid{
+    border-radius: 5%;
+    object-fit: cover;
+}
+.card-title{
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+.card{
+    margin-top: -5px;
+    box-shadow: 10px 5px rgb(103, 99, 99);
+}
+.card-text{
+    margin-top: 20px;
+}
+.fa-solid{
+    color: green;
+}
+.consul{
+    background-color: green;
+    color: #FFFFFF;
+    border-radius: 5%;
+    margin-top: 15px;
+}
+.consul:hover{
+    font-size: 105%;
+}
+.fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.contactame{
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+    padding: 70px 20px;
+    background-image: url(imagenes/contactanos.jpg);
+}
+.datos{
+    margin: auto;
+    max-width: 800px;
+}
+.avisame{
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+.fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.cola{
+    width: 48%;
+}
+.texto{
+    width: 100%;
+    padding: 2%;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(220, 251, 220);
+}
+.area{
+    width: 100%;
+    padding: 2%;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    margin-top: 20px;
+    height: 200px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(220, 251, 220);
+}
+.enter{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    border: solid black;
+    background: green;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.enter:hover{
+    font-size: 110%;
+}
+.final{
+    margin-bottom: 0;
+}
+.pie{
+    background-color: rgb(27, 27, 37);
+    padding: 10px 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.separador{
+    display: flex;
+    flex-wrap: wrap;
+}
+.links{
+    width: 33.33%;
+    padding: 0 15px;
+}
+.links h4{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(29, 246, 40);
+    padding: 10px;
+}
+ul{
+    list-style: none;
+}
+.links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: -22px;
+    transition: all .3s ease;
+}
+.links ul li a:hover{
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+.redes a{
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    min-height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+.redes a:hover{
+    font-size: 25px;
+}
+.instagram, .facebook, .whatsapp, .gmail{
+    color: #FFFFFF;
+}
+.instagram:hover{
+    background-color: darkmagenta;
+}
+.facebook:hover{
+    background-color: rgb(25, 53, 155);
+}
+.whatsapp:hover{
+    background-color: rgb(28, 233, 76);
+}
+.gmail:hover{
+    background-color: rgb(231, 33, 33);
+}
+.derechos{
+    border-top: 2px solid rgb(29, 246, 40);
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
