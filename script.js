@@ -85,33 +85,56 @@ testimoniosContainer.innerHTML = '';
 
 testimoniosDestacados.forEach(testimonio => {
     const testimonioElement = document.createElement('div');
-    testimonioElement.classList.add('testimonio');
-    testimonioElement.innerHTML = `<p>${testimonio.texto}</p> <h5 class="nombre">${testimonio.nombre}</h5>`;
+    testimonioElement.classList.add('frases');
+    testimonioElement.innerHTML = `<p>${testimonio.texto}</p> <h6 class="nombre">${testimonio.nombre}</h6>`;
     testimoniosContainer.appendChild(testimonioElement);
     });
 }
 
 window.addEventListener('load', mostrarTestimonios);
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    enter = addEventListener("click", function () {
+        const nombre = document.getElementById("nombre").value;
+        const email = document.getElementById("email").value;
+        const area = document.getElementById("area").value;
+
+        localStorage.setItem("nombre", nombre);
+        localStorage.setItem("email", email);
+        localStorage.setItem("area", area);
+
+        function recuperarDatosLocalStorage() {
+            const identidadGuardada = localStorage.getItem("nombre");
+            const emailGuardado = localStorage.getItem("email");
+            const comentarioGuardado = localStorage.getItem("area"); 
+        
+            document.getElementById("nombre").value = identidadGuardada;
+            document.getElementById("email").value = emailGuardado;
+            document.getElementById("area").value = comentarioGuardado;
+        };
+        
+        recuperarDatosLocalStorage();
+    })
+});
+
+
+
 let info = prompt ("Por favor, ingese su nombre")
 
 function saludar() {
         alert ("Bienvenido/a " + info + ", gracias por visitarnos!");
+        let opcion;
     do{
-        let opcion = prompt("Cúal es el objetivo que desea alcanzar: \n1 - Mejorar mi salud. \n2 - Estar en mejor condición. \n3 - Dieta acorde a una patología. \n4 - Nutrición vegetariana / vegana")
-        if(opcion == "1"){
-            alert(info + " te recomendamos que visites la sección de vida sana");
-        }
-        else if (opcion == "2"){
-            alert(info + " te recomendamos que visites la sección deportiva");
-        }
-        else if( opcion == "3"){
-            alert(info + " te recomendamos que visites la sección dietoterapia");
-        }
-        else if( opcion == "4"){
-            alert(info + " te recomendamos que visites la sección vegetariana / vegana");
-        }
+        opcion = prompt("Cúal es el objetivo que desea alcanzar: \n1 - Mejorar mi salud. \n2 - Estar en mejor condición. \n3 - Dieta acorde a una patología. \n4 - Nutrición vegetariana / vegana")
+        opcion == "1" ? alert(info + " te recomendamos que visites la sección de vida sana") : 
+        opcion == "2" ? alert(info + " te recomendamos que visites la sección deportiva") :
+        opcion == "3" ? alert(info + " te recomendamos que visites la sección dietoterapia"):
+        opcion == "4" ? alert(info + " te recomendamos que visites la sección vegetariana / vegana"):
+        null;
     }
-    while (opcion != undefined)
+    
+    while (opcion != null)
 }
+
 saludar()

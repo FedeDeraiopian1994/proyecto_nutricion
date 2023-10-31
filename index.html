@@ -181,11 +181,11 @@
             <p>La práctica de actividad física en cualquiera de sus modalidades es esencial para
               mantener un estilo de vida saludable.
               En lo que respecta a la nutrición en el deporte, nuestro enfoque comienza con una
-              entrevista inicial en la que recopilamos información para crear un historial clínico y
+              <b>entrevista inicial</b> en la que recopilamos información para crear un historial clínico y
               dietético completo. Esto incluye datos antropométricos como peso y talla, así como el
               <b>tipo de deporte que practica, la frecuencia y la duración de su actividad física</b>, y los
               objetivos específicos que desea alcanzar el paciente.
-              Durante las consultas posteriores, trabajamos en conjunto para lograr una serie de
+              Durante las <b>consultas posteriores</b>, trabajamos en conjunto para lograr una serie de
               metas, que incluyen <b>el aumento de la masa muscular al tiempo que se reduce la grasa
               corporal, el incremento de la fuerza para mejorar el rendimiento en el ejercicio</b>, y el
               ajuste de la ingesta de proteínas post ejercicio para recuperación y carbohidratos para
@@ -240,7 +240,7 @@
               veganismo o el vegetarianismo</b>.<br> Durante nuestra primera consulta, abordamos los
               nutrientes críticos y cómo obtenerlos a partir de alimentos vegetales. Luego, en la segunda consulta,
               desarrollamos un plan de alimentación personalizado, teniendo en cuenta los múltiples factores que rodean a
-              cada paciente. A lo largo de nuestras interacciones posteriores, revisamos los registros
+              cada paciente. <b>A lo largo de nuestras interacciones posteriores</b>, revisamos los registros
               alimentarios, generamos ideas de menús y profundizamos en el conocimiento del
               patrón vegetariano/vegano.
               <br>Esta atención individualizada y el seguimiento continuo son esenciales para ayudar a
@@ -252,7 +252,10 @@
     </section>
     <section class="opiniones">
       <div class="recuadro">
-        <div id="testimonios">
+        <div class="titulo">
+          <h5>Opiniones</h5>
+        </div>
+          <div id="testimonios">
 
         </div>
       </div>
@@ -260,21 +263,21 @@
     <section class="contactame">
       <div class="datos">
         <h5 class="avisame">Contacto</h5>
-        <form>
+        <form id="formularioContacto">
           <div class="fila">
-            <div class="cola">
-              <input type="text" class="texto" placeholder="Nombre y Apellido" required>
+              <div class="cola">
+                <input id="nombre" type="text"  placeholder="Nombre y Apellido" required>
+              </div>
+              <div class="cola">
+                <input id="email" type="email"  placeholder="Email" requiered>
+              </div>
+          </div>
+            <div class="comentario">
+              <textarea  name="" cols="30" rows="10" placeholder="Ingrese comentario..." id="area" required></textarea>
             </div>
-            <div class="cola">
-              <input type="email" class="texto" placeholder="Email" requiered>
-            </div>
-          </div>
-          <div class="comentario">
-            <textarea name="" cols="30" rows="10" placeholder="Ingrese comentario..." class="area" required></textarea>
-          </div>
-          <div class="mandar">
-            <input type="submit" value="ENVIAR" class="enter">
-          </div>
+            <div class="mandar">
+              <button id="enter" type="submit">ENVIAR</button>
+            </div> 
         </form>
     </section>
     <section class="final">
