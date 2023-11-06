@@ -12,7 +12,7 @@
   <title>Iamnutr</title>
   <link rel="icon" href="imagenes/logo.jpg" class="logotipo">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <section class="navegador">
@@ -42,18 +42,22 @@
                           <a class="nav-link" href="#">Consultorios</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Vida sana</a>
+                          <a class="nav-link" href="#">Secciones</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Deportiva</a>
+                          <a class="nav-link" href="#">Opiniones</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Dietoterapia</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Veganismo y vegetarianismo</a>
+                          <a class="nav-link" href="#">Contacto</a>
                         </li>
                       </ul>
+                      <div class="container-fluid">
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                          <ul class="resultados-busqueda"></ul>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -68,22 +72,22 @@
             </div>
             <div class="elecciones">
                 <div class="opcion">
-                    <a href="#nosotros">Conoceme</a>
+                    <a href="#">Conoceme</a>
                 </div>
                 <div class="opcion">
                   <a href="#">Consultorios</a> 
                 </div>
                 <div class="opcion">
-                  <a href="#">Vida sana</a>
+                  <a href="#">Secciones</a>
                 </div>
                 <div class="opcion">
-                  <a href="#">Deportiva</a>
+                  <a href="#">Opiniones</a>
                 </div>
                 <div class="opcion">
-                  <a href="#">Dietoterapia</a>
+                  <a href="#">Contacto</a>
                 </div>
-                <div class="opcion">
-                  <a href="#">Veganismo y vegetarianismo</a>
+                <div class="ayuda">
+                  <button id="botonAyuda">Ayuda</button>
                 </div>
             </div>
         </div>
@@ -313,7 +317,7 @@
                 <h5 class="derechos">© Iamnutr. Todos los derechos reservados.</h5>
             </div>
         </footer>
-    </section> 
-    <script type="text/javascript" src="script.js"></script> 
+    </section>  
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

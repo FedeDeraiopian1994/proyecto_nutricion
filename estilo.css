@@ -96,6 +96,12 @@ h1{
 .opcion a:hover{
     font-size: 105%;
 }
+.ayuda{
+    position: absolute;
+    margin-top: 48px;
+    margin-left: -72%;
+}
+
 .conoceme{
     margin-top: 7px;
 }

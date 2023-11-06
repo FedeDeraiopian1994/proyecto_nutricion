@@ -119,22 +119,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+let boton = document.getElementById("botonAyuda");
 
-let info = prompt ("Por favor, ingese su nombre")
+boton.addEventListener("click", elegir);
 
-function saludar() {
-        alert ("Bienvenido/a " + info + ", gracias por visitarnos!");
-        let opcion;
-    do{
-        opcion = prompt("Cúal es el objetivo que desea alcanzar: \n1 - Mejorar mi salud. \n2 - Estar en mejor condición. \n3 - Dieta acorde a una patología. \n4 - Nutrición vegetariana / vegana")
-        opcion == "1" ? alert(info + " te recomendamos que visites la sección de vida sana") : 
-        opcion == "2" ? alert(info + " te recomendamos que visites la sección deportiva") :
-        opcion == "3" ? alert(info + " te recomendamos que visites la sección dietoterapia"):
-        opcion == "4" ? alert(info + " te recomendamos que visites la sección vegetariana / vegana"):
-        null;
-    }
-    
-    while (opcion != null)
-}
-
-saludar()
+function elegir () {
+    swal.fire({
+        title: 'Desea que lo asesoremos?',
+        showCancelButton: true,
+        confirmButtonText: 'Si, por favor!',
+        cancelButtonText: 'No, gracias!',
+        reverseButtons: true
+      }).then((result) => {
+        if (result.isConfirmed) {
+            swal.fire({
+                title: "Cuál es el objetivo que desea alanzar?",
+                input: "select",
+                inputOptions:{
+                    "Opcion1": "Mejorar mi salud",
+                    "Opcion2": "Mejor condición",
+                    "Opcion3": "Dieta acorde a patología",
+                    "Opcion4": "Nutrición vegana / vegetariana",
+                },
+                showCancelButton: true,
+                confirmButtonText: "Aceptar",
+                cancelButtonText: "Cancelar",
+                inputPlaceholder: "Selecciona una opcion, por favor!"
+              }).then ((result) => {
+                
+                if(result.value){
+                    
+                    let mostrarTexto = "";
+                    if (result.value === "Mejorar mi salud"){ swal.fire(mostrarTexto = "Te recomendamos que visites la sección de vida sana");}
+                    else if (result.value === "Mejor condición") {swal.fire(mostrarTexto = "Te recomendamos que visites la sección deportiva");}
+                    else if (result.value === "Dieta acorde a patología") {swal.fire(mostrarTexto = "Te recomendamos que visites la sección dietoterapia");}
+                    else if (result.value === "Nutrición vegana / vegetariana") {swal.fire(mostrarTexto = "Te recomendamos que visites la sección vegetariana / vegana");}
+                }
+            });
+        }
+    });
+};
