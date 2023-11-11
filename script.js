@@ -150,10 +150,10 @@ function elegir () {
                 if(result.value){
                     
                     let mostrarTexto = "";
-                    if (result.value === "Mejorar mi salud"){ swal.fire(mostrarTexto = "Te recomendamos que visites la sección de vida sana");}
-                    else if (result.value === "Mejor condición") {swal.fire(mostrarTexto = "Te recomendamos que visites la sección deportiva");}
-                    else if (result.value === "Dieta acorde a patología") {swal.fire(mostrarTexto = "Te recomendamos que visites la sección dietoterapia");}
-                    else if (result.value === "Nutrición vegana / vegetariana") {swal.fire(mostrarTexto = "Te recomendamos que visites la sección vegetariana / vegana");}
+                    if (result.value === "Opcion1"){ swal.fire(mostrarTexto = "Te recomendamos que visites la sección de vida sana");}
+                    else if (result.value === "Opcion2") {swal.fire(mostrarTexto = "Te recomendamos que visites la sección deportiva");}
+                    else if (result.value === "Opcion3") {swal.fire(mostrarTexto = "Te recomendamos que visites la sección dietoterapia");}
+                    else if (result.value === "Opcion4") {swal.fire(mostrarTexto = "Te recomendamos que visites la sección vegetariana / vegana");}
                 }
             });
         }
