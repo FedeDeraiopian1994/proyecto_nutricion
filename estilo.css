@@ -273,6 +273,45 @@ h1{
     margin-top: 20px;
     margin-bottom: 18px;
 }
+.recetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categoriasContainer{
+    width: 80%;
+    padding: 3rem;
+    box-shadow: 10px 10px 40px 5px rgb(207, 173, 161);
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category{
+    padding: 3rem;
+    box-shadow: 10px 10px 40px 5px rgb(207, 173, 161);
+    margin-top: 3rem;
+    align-items: center;
+}
+.category img{
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 50px;
+}
+.category h3{
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+.category p{
+    font-family: sans-serif;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    color: rgb(46, 45, 45);
+    width: 26rem;
+    text-align: center;
+}
 .contactame{
     color: #fff;
     background-size: cover;

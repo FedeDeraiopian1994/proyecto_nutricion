@@ -159,3 +159,41 @@ function elegir () {
         }
     });
 };
+
+const apiKey = '1';
+
+fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
+    .then(response => response.json())
+    .then(data => {
+        displayCategories(data.categories);
+    })
+    .catch(error => {
+        console.error("Error en la obtencion de las recetas: ", error);
+    });
+
+function displayCategories(categories) {
+  const categoriesContainer = document.getElementById('categoriasContainer');
+
+    categories.forEach(category => {
+    const categoryElement = document.createElement('div');
+    categoryElement.classList.add('category'); 
+
+
+    const categoryName = document.createElement('h3');
+    categoryName.textContent = category.strCategory; 
+    categoryElement.appendChild(categoryName);
+
+    const categoryImage = document.createElement('img');
+    categoryImage.src = `https://www.themealdb.com/images/category/${category.strCategory}.png`;
+    categoryImage.classList.add('representacion')
+    categoryImage.alt = category.strCategory; 
+    categoryElement.appendChild(categoryImage);
+
+    const categoryDescription = document.createElement('p');
+    categoryDescription.textContent = category.strCategoryDescription; 
+    categoryElement.appendChild(categoryDescription);
+
+
+    categoriesContainer.appendChild(categoryElement);
+  });
+}
